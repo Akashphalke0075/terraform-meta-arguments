@@ -16,7 +16,7 @@ resource "aws_security_group" "class-ec2-server-sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0/0"] #Change IP Address as per your need
+    cidr_blocks = ["106.213.72.234/32"] #Change IP Address as per your need
   }
 
   ingress {
