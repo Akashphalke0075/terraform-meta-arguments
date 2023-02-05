@@ -3,7 +3,7 @@ resource "aws_instance" "class-ec2-server" {
     ami = "ami-0b5eea76982371e91"
     depends_on = [security_group.class-ec2-server-sg]
     vpc_security_group_ids = [security_group.class-ec2-server-sg.id]
-    tags {
+    tags = {
         "Name" = "5class-ec2-server"
     }
 }
