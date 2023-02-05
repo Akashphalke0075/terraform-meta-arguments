@@ -23,10 +23,10 @@ resource "aws_security_group" "class-ec2-server-sg" {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0/0"] #Change IP Address as per your need
+    cidr_blocks = ["106.213.72.234/32"] #Change IP Address as per your need
   }
   egress {
-    cidr_blocks = [ "0.0.0.0/0" ]
+    cidr_blocks = [ "106.213.72.234/32" ]
     ipv6_cidr_blocks = ["::/0"]
     from_port = 0
     to_port   = 0
