@@ -3,6 +3,7 @@ resource "aws_instance" "newclass-ec2-server" {
   ami = "ami-0b5eea76982371e91"
   depends_on = [aws_security_group.newclass-ec2-server-sg]
   vpc_security_group_ids = [aws_security_group.newclass-ec2-server-sg.id]
+  count = 3
   tags = {
     Name = "newclass-ec2-server"
   }
