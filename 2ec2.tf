@@ -26,6 +26,6 @@ resource "aws_security_group" "newclass-ec2-server-sg" {
 
 resource "aws_instance" "newclass-ec2-server-eu" {
   instance_type = "t2.micro"
-  ami = "ami-0b5eea76982371e91"
+  ami = "ami-0fe0b2cf0e1f25c8a"
   provider = aws.aws-eu-region
 }
