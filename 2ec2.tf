@@ -5,7 +5,7 @@ resource "aws_instance" "newclass-ec2-server" {
   vpc_security_group_ids = [aws_security_group.newclass-ec2-server-sg.id]
   count = 3
   tags = {
-    Name = "newclass-ec2-server"
+    Name = "newclass-ec2-server-${count.index}"
   }
 }
 
