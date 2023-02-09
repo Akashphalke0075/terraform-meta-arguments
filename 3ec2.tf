@@ -22,7 +22,7 @@ ingress {
 }
 
 resource "aws_instance" "best-sec-eu" {
-    ami = "ami-0b5eea76982371e91"
+    ami = "ami-0fe0b2cf0e1f25c8a"
     instance_type = "t2.micro"
     #depends_on = [aws_security_group.best-sec-ec2-sg1]
     #vpc_security_group_ids = [aws_security_group.best-sec-ec2-sg1.id]
