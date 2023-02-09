@@ -20,3 +20,14 @@ ingress {
 }
 
 }
+
+resource "aws_instance" "best-sec-ec2" {
+    ami = "ami-0b5eea76982371e91"
+    instance_type = "t2.micro"
+    #depends_on = [aws_security_group.best-sec-ec2-sg1]
+    #vpc_security_group_ids = [aws_security_group.best-sec-ec2-sg1.id]
+    provider = aws.aws-eu-region
+    tags = {
+        Name = "first-instance"
+    }
+}
